@@ -9,9 +9,6 @@ pnpm-debug.log*
 # Dependency directories
 node_modules/
 
-# Environment files
-.env
-
 # OS and Editor files
 .DS_Store
 .vscode/*
