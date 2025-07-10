@@ -5,8 +5,19 @@ const app = express();
 require('dotenv').config();
 const port = process.env.Port || 5000;
 
+const allowedOrigins = ['https://macrology-ponx.vercel.app','http://localhost:5173']
+
 //Middlewares
-app.use(cors()); 
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+}));
 app.use(express.json()); 
 
 //Routes
