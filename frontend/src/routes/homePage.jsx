@@ -179,7 +179,7 @@ function HomePage() {
               <input
                 type="range"
                 min="1"
-                max="100"
+                max="1000"
                 value={radius}
                 onChange={e => setRadius(Number(e.target.value))}
                 className="range range-xs"
