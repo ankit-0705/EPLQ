@@ -5,7 +5,7 @@ const app = express();
 require('dotenv').config();
 const port = process.env.Port || 5000;
 
-const allowedOrigins = ['https://macrology-ponx.vercel.app','http://localhost:5173']
+const allowedOrigins = ['https://eplq-two.vercel.app','http://localhost:5173']
 
 //Middlewares
 app.use(cors({
