@@ -18,3 +18,6 @@ node_modules/
 *.njsproj
 *.sln
 *.sw?
+
+#Environmental Variables
+.env
